@@ -1,15 +1,23 @@
 import { useState } from "react"
-
+function init() {
+    console.log("init executed");
+    
+    return Math.random();
+}
 export default function Counter(){
-let [count,setcount]=useState(0); // works--initialization
-console.log("Component is rendered!");
-console.log(`count=${count}`);
+let [count,setcount]=useState(init()); // works--initialization
+
+
+console.log("Component was re- rendered!");
+// console.log(`count=${count}`);
 
 let increaseCount=()=>{
-setcount(count+1);
-console.log(`inside  incount ,count=${count}`);
+setcount((currCount)=>{
+    return currCount+1;
+});
 
-console.log(count);
+// console.log(`inside  incount ,count=${count}`);
+// console.log(count);
 
 
 
