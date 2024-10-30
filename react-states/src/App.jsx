@@ -12,7 +12,7 @@ function App() {
       {/* <h4>States in react</h4>
       <Counter/>
        <LikeButton/>  */}
-       <LudoBoard/>
+       {/* <LudoBoard/> */}
    <TodoList/>
     </>
   )

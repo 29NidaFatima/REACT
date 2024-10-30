@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,84 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+  /* TodoList.css  */
+  body{
+    background-color: #c62525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.add-btn {
+  background-color: #28a745;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+button.mark-done-btn {
+  background-color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
