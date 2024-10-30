@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
 import LikeButton from './LikeButton'
-import LudoBoard from './LudoBoard'
+// import LudoBoard from './LudoBoard'
 import TodoList from './TodoList'
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       {/* <h4>States in react</h4>
       <Counter/>
        <LikeButton/>  */}
-       {/* <LudoBoard/> */}
+       <LudoBoard/>
    <TodoList/>
     </>
   )

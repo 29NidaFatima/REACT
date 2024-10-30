@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default  function LudoBoard(){
 
-    
+  
   let [Moves,setMoves]=useState({blue:0,yellow:0,green:0,red:0});//single object as a state variable
     let[Arr,setArr]=useState(["no moves"]);
  
